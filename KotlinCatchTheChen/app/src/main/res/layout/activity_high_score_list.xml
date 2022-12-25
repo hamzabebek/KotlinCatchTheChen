@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HighScoreList">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="464dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/highscore1"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginBottom="55dp"
+            android:text="Level 1 Highscore"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/highscore2"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="54dp"
+            android:text="Level 2 Highscore"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/highscore3"
+            android:layout_width="172dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="158dp"
+            android:text="Level 3 Highscore"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="157dp"
+        android:layout_height="323dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="75dp"
+            android:onClick="delete1"
+            android:text="Delete Score 1"
+            android:textColorHighlight="#FF0000"
+            app:rippleColor="#DC4646" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="75dp"
+            android:onClick="delete2"
+            android:text="Delete Score 2"
+            android:textColorHighlight="#FF0000" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:onClick="delete3"
+            android:text="Delete Score 3"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#DC2525"
+            android:textColorLink="#FFFFFF"
+            app:rippleColor="#F1C5C5" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

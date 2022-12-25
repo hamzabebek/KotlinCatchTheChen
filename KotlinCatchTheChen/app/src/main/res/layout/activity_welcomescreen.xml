@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcomescreen">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="324dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="14dp"
+        android:text="Welcome To CatchTheChen Game"
+        android:textColor="#EE00FF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="177dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        app:srcCompat="@drawable/angrychen" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="215dp"
+        android:layout_height="239dp"
+        android:layout_marginBottom="94dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="174dp"
+            android:layout_height="65dp"
+            android:onClick="start"
+            android:text="Start Game" />
+
+        <Button
+            android:id="@+id/episodeButton"
+            android:layout_width="174dp"
+            android:layout_height="65dp"
+            android:onClick="episodes"
+            android:text="Episodes" />
+
+        <Button
+            android:id="@+id/HighscoreButton"
+            android:layout_width="174dp"
+            android:layout_height="65dp"
+            android:onClick="highscorelist"
+            android:text="High Score List" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
